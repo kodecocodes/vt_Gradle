@@ -1,0 +1,13 @@
+println 'a'
+task t1 {
+  doFirst {
+    println 'b'   
+  }
+}
+println 'c'
+task t2 << {
+  println 'd'     
+}
+task t5 {
+  println 'e'
+}

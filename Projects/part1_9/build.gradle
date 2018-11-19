@@ -1,0 +1,17 @@
+plugins {
+    id 'base'
+}
+
+task firstTask {
+    doLast {
+        println "First Task"
+    }
+}
+task secondTask {
+    mustRunAfter 'firstTask'
+    doLast {
+        println "Second Task"
+    }
+}
+
+build.dependsOn 'firstTask', 'secondTask'

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextView"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            tools:text="Ray Wenderlich"
+            android:padding="5dp" android:paddingBottom="0dp"/>
+    <TextView
+            android:textColor="@color/textColor"
+            tools:text="RW Founder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutTextView" android:paddingBottom="16dp"
+            android:paddingStart="5dp" android:paddingRight="5dp" android:paddingLeft="5dp" android:paddingEnd="5dp"/>
+</LinearLayout>

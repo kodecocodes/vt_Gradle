@@ -1,0 +1,27 @@
+task unit {
+    group 'verification'
+    doLast {
+        logger.quiet "Executing unit tests"
+    }
+}
+task functional {
+    group 'verification'
+    doLast {
+        logger.quiet "Executing functional tests"
+    }
+}
+task check {
+    group 'verification'
+    doLast {
+        logger.quiet "Executing Check"
+    }
+}
+task report {
+    group 'documentation'
+    doLast {
+        logger.quiet "Executing doLast"
+    }
+}
+check.dependsOn unit, functional
+functional.mustRunAfter unit 
+check.finalizedBy report

@@ -1,0 +1,1 @@
+You will need Android Studio Preview 3.3 to use the Kotlin DSL and build variants working.
