@@ -28,7 +28,6 @@ allprojects {
         mapping('kt', 'FOO')
         excludes(['**/*.xml', '**/*.png'])
         includes(["**/*.kt", "**/*.java"])
-
     }
 }
 

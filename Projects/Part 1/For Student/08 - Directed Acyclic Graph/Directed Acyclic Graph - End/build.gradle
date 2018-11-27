@@ -1,10 +1,10 @@
-task unit {
+task unitTests {
     group 'verification'
     doLast {
         logger.quiet "Executing unit tests"
     }
 }
-task functional {
+task functionalTests {
     group 'verification'
     doLast {
         logger.quiet "Executing functional tests"
@@ -22,6 +22,6 @@ task report {
         logger.quiet "Executing doLast"
     }
 }
-check.dependsOn unit, functional
-functional.mustRunAfter unit 
+check.dependsOn unitTests, functionalTests
+functionalTests.mustRunAfter unitTests
 check.finalizedBy report
