@@ -1,0 +1,7 @@
+task helloRw {
+  group 'rw'
+  doLast {
+    println '*' * 50
+    println 'Welcome to Raywenderlich.com'
+    println '*' * 50  }
+}
