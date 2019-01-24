@@ -1,0 +1,13 @@
+task test {
+    group 'rw'
+    doLast {
+        logger.quiet 'test'
+    }
+}
+task build {
+    group 'rw'
+    dependsOn test
+    doLast {
+        logger.quiet 'build'
+    }
+}

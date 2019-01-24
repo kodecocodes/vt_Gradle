@@ -1,0 +1,8 @@
+task copy(type: Copy, group: "rw", description: "Copies sources to the dest directory") {
+  from "src"
+  into 'dest'
+}
+
+task delete(type: Copy, group: "rw", description: "Deletes the dest directory") {
+  delete copy.destinationDir
+}
